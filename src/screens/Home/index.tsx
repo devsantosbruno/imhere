@@ -37,8 +37,6 @@ export default function Home() {
           setParticipants((prevState) =>
             prevState.filter((participant) => participant !== name)
           );
-
-          Alert.alert("Deletado!");
         },
       },
       {
@@ -51,7 +49,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>Nome do evento</Text>
-      <Text style={styles.eventDate}>Sexta, 4 de Novembro de 2022</Text>
+      <Text style={styles.eventDate}>Data do evento</Text>
 
       <View style={styles.form}>
         <TextInput
